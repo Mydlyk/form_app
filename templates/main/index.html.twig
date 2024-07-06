@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    
+{% endblock %}
+
+{% block title %}Formularz{% endblock %}
+
+{% block body %}
+<div >
+    <div id="app"></div>
+    
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}

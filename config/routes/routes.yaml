@@ -1,0 +1,4 @@
+api_contact_form_submit:
+    path: /api/contact-form
+    controller: 'App\Controller\MainController::submit'
+    methods: [POST]

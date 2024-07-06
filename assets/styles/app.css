@@ -1,0 +1,16 @@
+body {
+    background-color: lightgray;
+}
+.table {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.table td,
+.table th {
+    max-width: 300px; /* Ustaw maksymalną szerokość komórek */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
