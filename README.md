@@ -1,4 +1,5 @@
 Form app
+<p align="center">
 Form_app wykorzystuje Symfony 7 oraz vue 3. Backend oraz Frontend są ze sobą zintegrowane jako jedna aplikacja za pomocą mechanizmu szablonów Twig. Dane w forularzach są walidowane za pomcą Symfony Validator, prostych instrukcji warunkowych i biblioteki vue validator. Dane są przechowywane w bazie danych, a operacje na nich są zarządzane przez Doctrine ORM. Aplikacja obsługuje i wyświetla błedy serwera oraz klienta.
 
 Wykorzystane biblioteki Symfony(Composer):
@@ -15,9 +16,9 @@ Axios- biblioteka służąca do wykonywania zapytań HTTP w aplikacjach JavaScri
 
 Implementcaja Symfony:
 Na początku w pliku webpacp.config.js zostało dodane wywołannie funkcji ".enableVueLoader()" która odpowiada za ustawiene Webpacka na używania vue-loader'a służącego do przetwarzania plików vue. 
-<center>
+
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/b27222a9-9797-4b0e-a545-c028507ee2b3)
-</center>
+
 Następnie w pliku index.html.twig dodany został głuwny komponent aplikacji vue.
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/dbe0a274-775d-4835-a147-e1767d27dc68)
 
