@@ -1,6 +1,6 @@
 <h1>Form app</h1>
 <h2>Opis aplikacji</h2>
-Form_app wykorzystuje Symfony 7 oraz vue 3. Backend oraz Frontend są ze sobą zintegrowane jako jedna aplikacja za pomocą mechanizmu szablonów Twig. Dane w forularzach są walidowane za pomcą Symfony Validator, prostych instrukcji warunkowych i biblioteki vue validator. Dane są przechowywane w bazie danych, a operacje na nich są zarządzane przez Doctrine ORM. Aplikacja obsługuje i wyświetla błedy serwera oraz klienta.
+Form_app wykorzystuje Symfony 7 oraz vue 3. Backend oraz Frontend są ze sobą zintegrowane jako jedna aplikacja za pomocą mechanizmu szablonów Twig. Dane w formularzach są walidowane za pomcą Symfony Validator, prostych instrukcji warunkowych i biblioteki vue validator. Dane są przechowywane w bazie danych, a operacje na nich są zarządzane przez Doctrine ORM. Aplikacja obsługuje i wyświetla błedy serwera oraz klienta.
 
 <h2>Wykorzystane biblioteki Symfony(Composer):</h2>
 orm-pack - pakiet zawierający zależności potrzebne do używania ORM
@@ -23,7 +23,7 @@ Następnie w pliku index.html.twig dodany został głuwny komponent aplikacji vu
 
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/dbe0a274-775d-4835-a147-e1767d27dc68)
 
-Następnie została stworzone encja ContactForm("php bin/console make:entity ContactForm") służąca do przechowywania wiadomości. Następnie została wykonana migracja(php bin/console make:migration) oraz wykonanie migracji w bazie danych(php bin/console make:migration). W projekcje została wykorzystana baza MySQL. Jako iż został wykorzystany Doctorine ORM możliwe jest wykorzystanie innej bazy danych np. PostgreSQL wystarczy zmienić zmienną DATABASE_URL w pliku .env. 
+Następnie została stworzona encja ContactForm("php bin/console make:entity ContactForm") służąca do przechowywania wiadomości. Następnie została wykonana migracja(php bin/console make:migration) oraz wykonanie migracji w bazie danych(php bin/console make:migration). W projekcje została wykorzystana baza MySQL. Jako iż został wykorzystany Doctorine ORM możliwe jest wykorzystanie innej bazy danych np. PostgreSQL wystarczy zmienić zmienną DATABASE_URL w pliku .env. 
 
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/4b051629-5c3c-4696-b6a3-0c5c36127a78)
 
