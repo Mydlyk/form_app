@@ -1,24 +1,26 @@
 <h1>Form app</h1>
+<h2>Opis aplikacji</h2>
 Form_app wykorzystuje Symfony 7 oraz vue 3. Backend oraz Frontend są ze sobą zintegrowane jako jedna aplikacja za pomocą mechanizmu szablonów Twig. Dane w forularzach są walidowane za pomcą Symfony Validator, prostych instrukcji warunkowych i biblioteki vue validator. Dane są przechowywane w bazie danych, a operacje na nich są zarządzane przez Doctrine ORM. Aplikacja obsługuje i wyświetla błedy serwera oraz klienta.
 
-Wykorzystane biblioteki Symfony(Composer):
+<h2>Wykorzystane biblioteki Symfony(Composer):</h2>
 orm-pack - pakiet zawierający zależności potrzebne do używania ORM
 encore – służy do konfiguracji Webpack’a
 twig - szablonowy język skryptowy  pozwalający na tworzenie dynamicznych stron internetowych
 validator - umożliwia walidację danych w aplikacji.
 webpack-encore - Pozwala na konfigurację zależności frontend’owych
 
-Wykorzystane biblioteki Vue(npm):
+<h2>Wykorzystane biblioteki Vue(npm):</h2>
 Bootstrap- framework CSS wykorzystywane do do stylizowania komponentów
 Validator- biblioteka JavaScript służąca do walidacji danych.
 Axios- biblioteka służąca do wykonywania zapytań HTTP w aplikacjach JavaScript.
 
-Implementcaja Symfony:
+<h2>Implementcaja Symfony:</h2>
 Na początku w pliku webpacp.config.js zostało dodane wywołannie funkcji ".enableVueLoader()" która odpowiada za ustawiene Webpacka na używania vue-loader'a służącego do przetwarzania plików vue. 
 
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/b27222a9-9797-4b0e-a545-c028507ee2b3)
 
 Następnie w pliku index.html.twig dodany został głuwny komponent aplikacji vue.
+
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/dbe0a274-775d-4835-a147-e1767d27dc68)
 
 Następnie została stworzone encja ContactForm("php bin/console make:entity ContactForm") służąca do przechowywania wiadomości. Następnie została wykonana migracja(php bin/console make:migration) oraz wykonanie migracji w bazie danych(php bin/console make:migration). W projekcje została wykorzystana baza MySQL. Jako iż został wykorzystany Doctorine ORM możliwe jest wykorzystanie innej bazy danych np. PostgreSQL wystarczy zmienić zmienną DATABASE_URL w pliku .env. 
@@ -49,7 +51,7 @@ Jeśli dane są poprawne następuje ich zapisanie do bazy danych oraz zwrócenie
 
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/6fc1a2ad-7d04-43a2-b0ec-71bec2c0016e)
 
-Implementcaja Vue:
+<h2>Implementcaja Vue:</h2>
 
 Pliki aplikacji vue znajdują w folderze "assets". W pliku app.js zostały dodane biblioteki bootstrap.
 
@@ -82,7 +84,7 @@ Przez to że wyświetlanie błędów od strony klienta i serwera jest bardzo pod
 Jeśli serwer nie zwróci żadnych błędów funkcja submitForm odczyta dane i przypisze je do obiektu submittedData, a następnie na stronie zostaną one wypisane w postaci tabelki. 
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/888b8087-7199-4a5d-be0e-9f7d11fc047d)
 
-Działanie aplikacji:
+<h2>Działanie aplikacji:</h2>
 
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/f0da9c74-31ac-41a0-a841-25b15e518815)
 
