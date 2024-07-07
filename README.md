@@ -15,9 +15,9 @@ Axios- biblioteka służąca do wykonywania zapytań HTTP w aplikacjach JavaScri
 
 Implementcaja Symfony:
 Na początku w pliku webpacp.config.js zostało dodane wywołannie funkcji ".enableVueLoader()" która odpowiada za ustawiene Webpacka na używania vue-loader'a służącego do przetwarzania plików vue. 
-
+<center>
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/b27222a9-9797-4b0e-a545-c028507ee2b3)
-
+</center>
 Następnie w pliku index.html.twig dodany został głuwny komponent aplikacji vue.
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/dbe0a274-775d-4835-a147-e1767d27dc68)
 
@@ -82,7 +82,7 @@ Przez to że wyświetlanie błędów od strony klienta i serwera jest bardzo pod
 Jeśli serwer nie zwróci żadnych błędów funkcja submitForm odczyta dane i przypisze je do obiektu submittedData, a następnie na stronie zostaną one wypisane w postaci tabelki. 
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/888b8087-7199-4a5d-be0e-9f7d11fc047d)
 
-Działanie informacji:
+Działanie aplikacji:
 
 ![image](https://github.com/Mydlyk/form_app/assets/65900710/f0da9c74-31ac-41a0-a841-25b15e518815)
 
@@ -93,4 +93,5 @@ Działanie informacji:
 
 W tym przykładzie zostało usunięte sprawdzanie po stronie klienty by przetestować czy poprawnie zostanie odczytany błąd od serwera.
 
+![image](https://github.com/Mydlyk/form_app/assets/65900710/7e603391-8667-4d12-b7c7-87f731a4f07e)
 
