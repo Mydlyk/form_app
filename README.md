@@ -84,4 +84,13 @@ Jeśli serwer nie zwróci żadnych błędów funkcja submitForm odczyta dane i p
 
 Działanie informacji:
 
+![image](https://github.com/Mydlyk/form_app/assets/65900710/f0da9c74-31ac-41a0-a841-25b15e518815)
+
+![image](https://github.com/Mydlyk/form_app/assets/65900710/1de8afdb-1240-4158-b8b1-a8f45fbe0e54)
+
+
+![image](https://github.com/Mydlyk/form_app/assets/65900710/fe8227bd-fbe1-4944-a380-e2cf94503bdf)
+
+W tym przykładzie zostało usunięte sprawdzanie po stronie klienty by przetestować czy poprawnie zostanie odczytany błąd od serwera.
+
 
